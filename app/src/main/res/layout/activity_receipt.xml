@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020933"
+    tools:context=".ReceiptActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:id="@+id/orderReceiptTitleLayout"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/coffeeshop_name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderReceiptTitle"
+            android:gravity="center"
+            android:text="Customer Copy \nReceipt"
+            android:textColor="#B49A7A"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:paddingRight="16dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/orderReceiptTitleLayout"
+        android:background="#B49A7A" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderReceiptTitleLayout"
+        android:layout_above="@+id/totalLayout"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp">
+
+    <TextView
+        android:id="@+id/orderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderReceiptTitleLayout"
+        android:layout_above="@+id/totalLayout"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textColor="#B49A7A"
+        android:textSize="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp" />
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/totalLayout"
+        android:background="#B49A7A" />
+
+    <LinearLayout
+        android:id="@+id/totalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingTop="22dp">
+
+        <TextView
+            android:id="@+id/subtotalCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:text="Subtotal: $0.00"
+            android:textColor="#B49A7A"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/taxCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            android:text="Tax (10%): $0.00"
+            android:textColor="#B49A7A"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/totalCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            android:text="Total: $0.00"
+            android:textColor="#B49A7A"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

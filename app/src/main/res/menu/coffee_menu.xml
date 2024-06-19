@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_coffee"
+        android:title="Select your coffee"
+        android:enabled="false"
+        android:clickable="false"/>
+    <item
+        android:id="@+id/menu_latte"
+        android:title="Latte" />
+    <item
+        android:id="@+id/menu_mocha"
+        android:title="Mocha" />
+    <item
+        android:id="@+id/menu_americano"
+        android:title="Americano" />
+</menu>
