@@ -20,6 +20,9 @@
         android:padding="10dp"
         android:background="#020933" />
 
+<!--    https://developer.android.com/reference/android/widget/ScrollView-->
+<!--    https://www.geeksforgeeks.org/scrollview-in-android/-->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

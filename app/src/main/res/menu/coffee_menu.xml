@@ -15,3 +15,6 @@
         android:id="@+id/menu_americano"
         android:title="Americano" />
 </menu>
+
+<!--    https://www.geeksforgeeks.org/context-menu-in-android-with-example/-->
+<!--    https://www.youtube.com/watch?v=fMoy_QvETxU&t=248s-->
